@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar",
+            "type": "shell",
+            "command": "C:\\Users\\Marina\\Downloads\\mingi\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "produtor-consumidor.c",
+                "-o",
+                "produtor-consumidor.exe",
+                "-lwinpthread"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
