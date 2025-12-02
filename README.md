@@ -1,4 +1,4 @@
-# Sistema Produtor–Consumidor (Impressora compartilhada)
+'# Sistema Produtor–Consumidor (Impressora compartilhada)
 Implementação em C usando pthreads, semáforos e buffer circular FIFO.
 
 ## 📌 Descrição Geral
@@ -22,7 +22,8 @@ O sistema imprime em tempo real:
 
 ---
 
-## 📁 Estrutura do Projeto|
+## 📁 Estrutura do Projeto
+
 ├── main.c # Arquivo principal (criação de threads e init) 
 ├── produtor-consumidor.c     # Lógica dos produtores, consumidor e buffer 
 └── README.md                 # Este arquivo
