@@ -6,8 +6,8 @@
 #include <time.h>
 
 #define TAM 5
-#define NUM_PROD 3
-#define DEADLINE_MS 5000   // 5ms
+#define NUM_PROD 4
+#define DEADLINE_MS 5000   // 5s
 
 // Períodos (em ms)
 int PERIODOS_PRODUTORES[NUM_PROD] = {700, 1200, 1800};
@@ -82,7 +82,7 @@ void* produtor(void* arg) {
         fim = (fim + 1) % TAM;
         num_docs++;
 
-        printf("[Produtor %d] ENVIOU doc %d (fila: %d)\n", id, d.id, num_docs);
+        printf("[Produtor %d] ENVIOU doc %d (nº de docs na  fila: %d)\n", id, d.id, num_docs);
         printFila();
         pthread_mutex_unlock(&mutex);
         sem_post(&docs_disponiveis);
